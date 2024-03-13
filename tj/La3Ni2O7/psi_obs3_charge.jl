@@ -1,20 +1,7 @@
 using ITensors
 using ITensors.HDF5
 #
-let 
-    # load psi
-    bc = "pbc"
-    Lz = 2
-    Ly = 3
-    Lx = 8
-    N = Lz * Ly * Lx
-    #
-    txy = 3.0
-    tz = 0.0
-    Jxy = 1.0
-    Jz = 0.5
-    dop_level = (1,2)
-    #
+function charge(bc, Lz, Ly, Lx, N, txy, tz, Jxy, Jz, dop_level)
     workpath = "./output/psi/"
     filename_psi_1 = "Lz$(Lz)_Ly$(Ly)_Lx$(Lx)_N$(N)_S$(0.5)_txy$(txy)_tz$(tz)_Jxy$(Jxy)_Jz$(Jz)_dop$(dop_level)_"
     filename_psi_2 = bc
@@ -26,11 +13,11 @@ let
     close(f)
     #--- measure local electron density 
     Nup = expect(psi, "Nup")
-    #@show Nup
+    @show Nup
     Ndn = expect(psi, "Ndn")
-    #@show Ndn
+    @show Ndn
     Ntot = expect(psi, "Ntot")
-    #@show Ntot
+    @show Ntot
     #
     savepath = "./"
     filename_Nup_1 = filename_psi_1
@@ -62,5 +49,24 @@ let
     write(f, "Ntot", Ntot)
     close(f)
     #
-
 end
+
+#=
+let 
+    # load psi
+    bc = "pbc"
+    Lz = 2
+    Ly = 3
+    Lx = 8
+    N = Lz * Ly * Lx
+    #
+    txy = 3.0
+    tz = 0.0
+    Jxy = 1.0
+    Jz = 0.5
+    dop_level = (1,2)
+    #
+    println("---psi_obs3_charge---")
+    charge(bc, Lz, Ly, Lx, N, txy, tz, Jxy, Jz, dop_level)
+end
+=#
