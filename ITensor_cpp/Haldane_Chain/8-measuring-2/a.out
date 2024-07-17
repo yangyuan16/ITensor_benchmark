@@ -1,0 +1,125 @@
+
+    vN Entropy at center bond b=20 = 0.608724882408
+    Eigs at center bond b=20: 0.7701 0.2161 0.0066 0.0027 0.0025 0.0020 
+    Largest link dim during sweep 1/5 was 9
+    Largest truncation error: 3.61794e-16
+    Energy after sweep 1/5 is -54.548503105345
+    Sweep 1/5 CPU time = 0.0405s (Wall time = 0.0405s)
+
+    vN Entropy at center bond b=20 = 0.846598685713
+    Eigs at center bond b=20: 0.5135 0.4573 0.0074 0.0071 0.0070 0.0069 
+    Largest link dim during sweep 2/5 was 20
+    Largest truncation error: 2.04583e-06
+    Energy after sweep 2/5 is -54.849452522657
+    Sweep 2/5 CPU time = 0.212s (Wall time = 0.224s)
+
+    vN Entropy at center bond b=20 = 0.855132837758
+    Eigs at center bond b=20: 0.4945 0.4749 0.0075 0.0074 0.0074 0.0073 
+    Largest link dim during sweep 3/5 was 92
+    Largest truncation error: 6.16204e-11
+    Energy after sweep 3/5 is -54.850919316374
+    Sweep 3/5 CPU time = 5.044s (Wall time = 5.212s)
+
+    vN Entropy at center bond b=20 = 0.855428999016
+    Eigs at center bond b=20: 0.4946 0.4747 0.0075 0.0074 0.0074 0.0073 
+    Largest link dim during sweep 4/5 was 100
+    Largest truncation error: 7.75771e-11
+    Energy after sweep 4/5 is -54.850925628100
+    Sweep 4/5 CPU time = 18.30s (Wall time = 18.76s)
+
+    vN Entropy at center bond b=20 = 0.855452876637
+    Eigs at center bond b=20: 0.4948 0.4746 0.0075 0.0074 0.0074 0.0073 
+    Largest link dim during sweep 5/5 was 110
+    Largest truncation error: 5.89542e-11
+    Energy after sweep 5/5 is -54.850930848814
+    Sweep 5/5 CPU time = 20.84s (Wall time = 21.24s)
+
+j Sz = 
+
+j S.S = 
+1 -1.611414763215
+2 -1.294559652222
+3 -1.426174729212
+4 -1.378234102296
+5 -1.404863499279
+6 -1.394768190035
+7 -1.401541260344
+8 -1.399210003058
+9 -1.401156213859
+10 -1.400626121801
+11 -1.401234299004
+12 -1.401134188470
+13 -1.401336328388
+14 -1.401332658877
+15 -1.401402156730
+16 -1.401414139165
+17 -1.401436666403
+18 -1.401447669663
+19 -1.401450828699
+20 -1.401456594198
+21 -1.401451597879
+22 -1.401447040670
+23 -1.401437263389
+24 -1.401414129482
+25 -1.401402307343
+26 -1.401332720057
+27 -1.401336692292
+28 -1.401134483288
+29 -1.401234557460
+30 -1.400626889870
+31 -1.401156261034
+32 -1.399212918507
+33 -1.401538703317
+34 -1.394773344723
+35 -1.404857095287
+36 -1.378231185257
+37 -1.426172627203
+38 -1.294576175720
+39 -1.611400791116
+
+Sum of S.S = -54.850930848812
+i j m n  0.267817
+i j m n  0.232836
+i j m n  0.224616
+i j m n  0.0473803
+i j m n  0.0439333
+i j m n  0.0241215
+Across bond b=1, SvN= 0.8547453034
+Across bond b=2, SvN= 0.7509708934
+Across bond b=3, SvN= 0.8462312252
+Across bond b=4, SvN= 0.8267145103
+Across bond b=5, SvN= 0.8483541708
+Across bond b=6, SvN= 0.8444488165
+Across bond b=7, SvN= 0.8507001762
+Across bond b=8, SvN= 0.8502735123
+Across bond b=9, SvN= 0.8525039970
+Across bond b=10, SvN= 0.8527925070
+Across bond b=11, SvN= 0.8537569643
+Across bond b=12, SvN= 0.8540926073
+Across bond b=13, SvN= 0.8545676107
+Across bond b=14, SvN= 0.8548129005
+Across bond b=15, SvN= 0.8550590041
+Across bond b=16, SvN= 0.8552091117
+Across bond b=17, SvN= 0.8553311304
+Across bond b=18, SvN= 0.8554071370
+Across bond b=19, SvN= 0.8554508942
+Across bond b=20, SvN= 0.8554668106
+Across bond b=21, SvN= 0.8554511925
+Across bond b=22, SvN= 0.8554059335
+Across bond b=23, SvN= 0.8553302482
+Across bond b=24, SvN= 0.8552074242
+Across bond b=25, SvN= 0.8550570228
+Across bond b=26, SvN= 0.8548109208
+Across bond b=27, SvN= 0.8545662247
+Across bond b=28, SvN= 0.8540918752
+Across bond b=29, SvN= 0.8537571579
+Across bond b=30, SvN= 0.8527942086
+Across bond b=31, SvN= 0.8525065347
+Across bond b=32, SvN= 0.8502783046
+Across bond b=33, SvN= 0.8507016019
+Across bond b=34, SvN= 0.8444553153
+Across bond b=35, SvN= 0.8483545081
+Across bond b=36, SvN= 0.8267198462
+Across bond b=37, SvN= 0.8462452741
+Across bond b=38, SvN= 0.7509988096
+Across bond b=39, SvN= 0.8547463710
