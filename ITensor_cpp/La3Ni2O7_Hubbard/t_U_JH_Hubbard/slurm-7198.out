@@ -1,0 +1,55 @@
+rm -fr .debug_objs *.o dmrg dmrg-g
+g++ -m64 -std=c++17 -fconcepts -fPIC -c -I. -I'/public/home/phy_ssgong/soft/ITensor'  -DITENSOR_USE_OMP -fopenmp -O2 -DNDEBUG -Wall -Wno-unknown-pragmas -Wno-unused-variable -o dmrg.o dmrg.cc
+g++ -m64 -std=c++17 -fconcepts -fPIC -I. -I'/public/home/phy_ssgong/soft/ITensor'  -DITENSOR_USE_OMP -fopenmp -O2 -DNDEBUG -Wall -Wno-unknown-pragmas -Wno-unused-variable dmrg.o -o dmrg -L'/public/home/phy_ssgong/soft/ITensor/lib' -litensor -lpthread -L/usr/lib -lblas -llapack  -fopenmp
+sweeps = 
+Sweeps:
+1  MaxDim=100, MinDim=1, Cutoff=1.0E-08, Niter=2, Noise=1.0E-07
+2  MaxDim=500, MinDim=1, Cutoff=1.0E-08, Niter=2, Noise=1.0E-08
+3  MaxDim=1000, MinDim=1, Cutoff=1.0E-08, Niter=2, Noise=1.0E-10
+4  MaxDim=2000, MinDim=1, Cutoff=1.0E-08, Niter=2, Noise=0.0E+00
+5  MaxDim=3000, MinDim=1, Cutoff=1.0E-08, Niter=2, Noise=0.0E+00
+6  MaxDim=3000, MinDim=1, Cutoff=1.0E-08, Niter=2, Noise=0.0E+00
+7  MaxDim=3000, MinDim=1, Cutoff=1.0E-08, Niter=2, Noise=0.0E+00
+8  MaxDim=3000, MinDim=1, Cutoff=1.0E-08, Niter=2, Noise=0.0E+00
+9  MaxDim=3000, MinDim=1, Cutoff=1.0E-08, Niter=2, Noise=0.0E+00
+10  MaxDim=3000, MinDim=1, Cutoff=1.0E-08, Niter=2, Noise=0.0E+00
+
+
+    vN Entropy at center bond b=128 = 0.399939903116
+    Eigs at center bond b=128: 0.9258 0.0195 0.0164 0.0156 0.0110 0.0049 0.0043 
+    Largest link dim during sweep 1/10 was 87
+    Largest truncation error: 9.8205e-09
+    Energy after sweep 1/10 is 297.643112271191
+    Sweep 1/10 CPU time = 4.229s (Wall time = 4.433s)
+
+    vN Entropy at center bond b=128 = 1.095156337822
+    Eigs at center bond b=128: 0.7645 0.0555 0.0384 0.0341 0.0241 0.0226 0.0188 0.0144 0.0047 0.0035 
+    Largest link dim during sweep 2/10 was 500
+    Largest truncation error: 5.67474e-08
+    Energy after sweep 2/10 is 282.310708252301
+    Sweep 2/10 CPU time = 2m, 50.7s (Wall time = 3m, 7.8s)
+
+    vN Entropy at center bond b=128 = 1.352076293796
+    Eigs at center bond b=128: 0.6924 0.0811 0.0517 0.0403 0.0254 0.0243 0.0221 0.0176 0.0074 0.0072 
+    Largest link dim during sweep 3/10 was 1000
+    Largest truncation error: 1.46452e-08
+    Energy after sweep 3/10 is 275.242551907374
+    Sweep 3/10 CPU time = 17m, 29s (Wall time = 18m, 19s)
+
+    vN Entropy at center bond b=128 = 1.501208880455
+    Eigs at center bond b=128: 0.6451 0.1003 0.0609 0.0424 0.0333 0.0236 0.0206 0.0162 0.0108 0.0096 
+    Largest link dim during sweep 4/10 was 1626
+    Largest truncation error: 7.03085e-09
+    Energy after sweep 4/10 is 270.098236540832
+    Sweep 4/10 CPU time = 23m, 16s (Wall time = 24m, 44s)
+
+    vN Entropy at center bond b=128 = 1.619528693056
+    Eigs at center bond b=128: 0.6036 0.1188 0.0694 0.0427 0.0403 0.0219 0.0196 0.0150 0.0142 0.0124 
+    Largest link dim during sweep 5/10 was 2499
+    Largest truncation error: 6.60343e-09
+    Energy after sweep 5/10 is 265.269359646364
+    Sweep 5/10 CPU time = 50m, 50s (Wall time = 55m, 4s)
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=7198.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+srun: error: int01: task 0: Out Of Memory
+srun: launch/slurm: _step_signal: Terminating StepId=7198.0
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=7198.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
